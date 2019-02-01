@@ -9,6 +9,7 @@
 
 from __future__ import absolute_import, print_function
 
+from cesnet_perun_proxyidp.remote import PerunAuthRemote
 from . import config
 
 
@@ -30,3 +31,8 @@ class PerunProxyIDPOpenIDC(object):
 
         Override configuration variables with the values in this package.
         """
+        app.config.update(
+            OAUTHCLIENT_REMOTE_APPS = dict(
+                edsuid=PerunAuthRemote().remote_app()
+            )
+        )
