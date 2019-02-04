@@ -27,12 +27,6 @@ class PerunProxyIDPOpenIDC(object):
         app.extensions['cesnet-perun-proxyidp'] = self
 
     def init_config(self, app):
-        """Initialize configuration.
-
-        Override configuration variables with the values in this package.
-        """
         app.config.update(
-            OAUTHCLIENT_REMOTE_APPS = dict(
-                edsuid=PerunAuthRemote().remote_app()
-            )
+            {k: getattr(config, k) for k in dir(config) if k.isupper()}
         )
