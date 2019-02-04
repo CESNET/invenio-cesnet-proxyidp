@@ -9,9 +9,6 @@
 
 from __future__ import absolute_import, print_function
 
-from cesnet_perun_proxyidp.remote import PerunAuthRemote
-from . import config
-
 
 class PerunProxyIDPOpenIDC(object):
     """Perun ProxyIDP OpenIDC extension."""
@@ -23,10 +20,4 @@ class PerunProxyIDPOpenIDC(object):
 
     def init_app(self, app):
         """Flask application initialization."""
-        self.init_config(app)
-        app.extensions['cesnet-perun-proxyidp'] = self
 
-    def init_config(self, app):
-        app.config.update(
-            {k: getattr(config, k) for k in dir(config) if k.isupper()}
-        )
