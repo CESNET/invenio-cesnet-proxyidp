@@ -60,7 +60,7 @@ author = u'Miroslav Bauer'
 # Get the version string. Cannot be done with import!
 g = {}
 with open(os.path.join(os.path.dirname(__file__), '..',
-                       'cesnet_perun_proxyidp', 'version.py'),
+                       'invenio_cesnet_proxyidp', 'version.py'),
           'rt') as fp:
     exec(fp.read(), g)
     version = g['__version__']
@@ -119,13 +119,13 @@ html_theme = 'alabaster'
 html_theme_options = {
     'description': 'CESNET Perun ProxyIDP OpenIDC auth backend',
     'github_user': 'inveniosoftware',
-    'github_repo': 'cesnet-perun-proxyidp',
+    'github_repo': 'invenio-cesnet-proxyidp',
     'github_button': False,
     'github_banner': True,
     'show_powered_by': False,
     'extra_nav_links': {
-        'cesnet-perun-proxyidp@GitHub': 'https://github.com/CESNET/invenio-proxyidp',
-        'cesnet-perun-proxyidp@PyPI': 'https://pypi.python.org/pypi/cesnet-perun-proxyidp/',
+        'invenio-cesnet-proxyidp@GitHub': 'https://github.com/CESNET/invenio-cesnet-proxyidp',
+        'invenio-cesnet-proxyidp@PyPI': 'https://pypi.python.org/pypi/invenio-cesnet-proxyidp/',
     }
 }
 
@@ -230,7 +230,7 @@ html_sidebars = {
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'cesnet-perun-proxyidp_namedoc'
+htmlhelp_basename = 'invenio-cesnet-proxyidp_namedoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -252,7 +252,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'cesnet-perun-proxyidp.tex', u'cesnet-perun-proxyidp Documentation',
+    (master_doc, 'invenio-cesnet-proxyidp.tex', u'invenio-cesnet-proxyidp Documentation',
      u'Miroslav Bauer', 'manual'),
 ]
 
@@ -282,7 +282,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'cesnet-perun-proxyidp', u'cesnet-perun-proxyidp Documentation',
+    (master_doc, 'invenio-cesnet-proxyidp', u'invenio-cesnet-proxyidp Documentation',
      [author], 1)
 ]
 
@@ -296,8 +296,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'cesnet-perun-proxyidp', u'Perun ProxyIDP OpenIDC Documentation',
-     author, 'cesnet-perun-proxyidp', 'CESNET Perun ProxyIDP OpenIDC auth backend',
+    (master_doc, 'invenio-cesnet-proxyidp', u'Perun ProxyIDP OpenIDC Documentation',
+     author, 'invenio-cesnet-proxyidp', 'CESNET Perun ProxyIDP OpenIDC auth backend',
      'Miscellaneous'),
 ]
 

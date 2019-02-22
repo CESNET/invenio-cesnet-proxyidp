@@ -8,20 +8,20 @@
  Perun ProxyIDP OpenIDC
 ========================
 
-.. image:: https://img.shields.io/github/license/CESNET/invenio-proxyidp.svg
-        :target: https://github.com/CESNET/invenio-proxyidp/blob/master/LICENSE
+.. image:: https://img.shields.io/github/license/CESNET/invenio-cesnet-proxyidp.svg
+        :target: https://github.com/CESNET/invenio-cesnet-proxyidp/blob/master/LICENSE
 
-.. image:: https://img.shields.io/travis/CESNET/invenio-proxyidp.svg
-        :target: https://travis-ci.org/CESNET/invenio-proxyidp
+.. image:: https://img.shields.io/travis/CESNET/invenio-cesnet-proxyidp.svg
+        :target: https://travis-ci.org/CESNET/invenio-cesnet-proxyidp
 
-.. image:: https://img.shields.io/coveralls/CESNET/invenio-proxyidp.svg
-        :target: https://coveralls.io/r/CESNET/invenio-proxyidp
+.. image:: https://img.shields.io/coveralls/CESNET/invenio-cesnet-proxyidp.svg
+        :target: https://coveralls.io/r/CESNET/invenio-cesnet-proxyidp
 
-.. image:: https://img.shields.io/pypi/v/cesnet-perun-proxyidp.svg
-        :target: https://pypi.org/pypi/cesnet-perun-proxyidp
+.. image:: https://img.shields.io/pypi/v/invenio-cesnet-proxyidp.svg
+        :target: https://pypi.org/pypi/invenio-cesnet-proxyidp
 
 CESNET Perun ProxyIDP OpenIDC auth backend
 
 Further documentation is available on
-https://cesnet-perun-proxyidp.readthedocs.io/
+https://invenio-cesnet-proxyidp.readthedocs.io/
 

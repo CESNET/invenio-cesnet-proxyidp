@@ -42,27 +42,27 @@ packages = find_packages()
 
 # Get the version string. Cannot be done with import!
 g = {}
-with open(os.path.join('cesnet_perun_proxyidp', 'version.py'), 'rt') as fp:
+with open(os.path.join('invenio_cesnet_proxyidp', 'version.py'), 'rt') as fp:
     exec(fp.read(), g)
     version = g['__version__']
 
 setup(
-    name='cesnet-perun-proxyidp',
+    name='invenio-cesnet-proxyidp',
     version=version,
     description=__doc__,
     long_description=readme,
-    keywords='cesnet-perun-proxyidp Invenio',
+    keywords='invenio-cesnet-proxyidp Invenio',
     license='MIT',
     author='Miroslav Bauer',
     author_email='bauer@cesnet.cz',
-    url='https://github.com/CESNET/invenio-proxyidp',
+    url='https://github.com/CESNET/invenio-cesnet-proxyidp',
     packages=packages,
     zip_safe=False,
     include_package_data=True,
     platforms='any',
     entry_points={
         'invenio_base.apps': [
-            'cesnet_perun_proxyidp = cesnet_perun_proxyidp:PerunProxyIDPOpenIDC',
+            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:PerunProxyIDPOpenIDC',
         ],
 
     },

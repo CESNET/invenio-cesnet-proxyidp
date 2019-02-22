@@ -7,7 +7,7 @@
 
 """Version information for Perun ProxyIDP OpenIDC.
 
-This file is imported by ``cesnet_perun_proxyidp.__init__``,
+This file is imported by ``invenio_cesnet_proxyidp.__init__``,
 and parsed by ``setup.py``.
 """
 

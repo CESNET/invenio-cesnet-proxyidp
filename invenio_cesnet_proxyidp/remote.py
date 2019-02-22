@@ -9,7 +9,7 @@
 
 from invenio_openid_connect import InvenioAuthOpenIdRemote
 
-from cesnet_perun_proxyidp.models import UserInfo
+from invenio_cesnet_proxyidp.models import UserInfo
 
 
 class PerunAuthRemote(InvenioAuthOpenIdRemote):
