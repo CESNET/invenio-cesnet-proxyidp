@@ -7,12 +7,12 @@
 
 """Remote application for enabling sign in/up with OpenID Connect. """
 
-from oarepo_openid_connect import OarepoAuthOpenIdRemote
+from invenio_openid_connect import InvenioAuthOpenIdRemote
 
 from cesnet_perun_proxyidp.models import UserInfo
 
 
-class PerunAuthRemote(OarepoAuthOpenIdRemote):
+class PerunAuthRemote(InvenioAuthOpenIdRemote):
     """ OArepo OpenID Connect Abstract Remote App """
 
     CONFIG_OPENID = 'PROXYIDP_CONFIG'

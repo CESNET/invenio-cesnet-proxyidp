@@ -33,7 +33,7 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.3',
-    'oarepo-openid-connect>=1.0.0',
+    'invenio-openid-connect>=1.0.0',
     'arrow>=0.12.1',
 ]
 
