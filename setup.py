@@ -64,7 +64,9 @@ setup(
         'invenio_base.apps': [
             'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:PerunProxyIDPOpenIDC',
         ],
-
+        'invenio_base.api_apps': [
+            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:PerunProxyIDPOpenIDC',
+        ]
     },
     install_requires=install_requires,
     setup_requires=setup_requires,
