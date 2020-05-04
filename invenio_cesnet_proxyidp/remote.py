@@ -12,7 +12,7 @@ from invenio_openid_connect import InvenioAuthOpenIdRemote
 from invenio_cesnet_proxyidp.models import UserInfo
 
 
-class PerunAuthRemote(InvenioAuthOpenIdRemote):
+class ProxyIDPAuthRemote(InvenioAuthOpenIdRemote):
     """ OArepo OpenID Connect Abstract Remote App """
 
     CONFIG_OPENID = 'PROXYIDP_CONFIG'
