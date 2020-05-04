@@ -62,10 +62,10 @@ setup(
     platforms='any',
     entry_points={
         'invenio_base.apps': [
-            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:PerunProxyIDPOpenIDC',
+            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:InvenioCesnetProxyIDP',
         ],
         'invenio_base.api_apps': [
-            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:PerunProxyIDPOpenIDC',
+            'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:InvenioCesnetProxyIDP',
         ]
     },
     install_requires=install_requires,
