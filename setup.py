@@ -61,12 +61,18 @@ setup(
     include_package_data=True,
     platforms='any',
     entry_points={
+        'console_scripts': [
+            'proxyidp = invenio_app.cli:cli',
+        ],
         'invenio_base.apps': [
             'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:InvenioCesnetProxyIDP',
         ],
         'invenio_base.api_apps': [
             'invenio_cesnet_proxyidp = invenio_cesnet_proxyidp:InvenioCesnetProxyIDP',
-        ]
+        ],
+        "flask.commands": [
+            "proxyidp = invenio_cesnet_proxyidp.cli:proxyidp",
+        ],
     },
     install_requires=install_requires,
     setup_requires=setup_requires,
